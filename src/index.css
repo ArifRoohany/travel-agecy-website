@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #000080;
+  --color-secondary: #F97316;
+  --color-dark: #0F172A;
+  --color-light: #F8FAFC;
+  --color-success: #22C55E;
+}
+
+/* ======================================
+   Featured Tours Swiper Pagination
+====================================== */
+
+.featured-tours-pagination {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-top: 40px;
+}
+
+.featured-tours-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #000080;
+  opacity: 0.35;
+  transition: all 0.3s ease;
+}
+
+.featured-tours-pagination .swiper-pagination-bullet-active {
+  width: 36px;
+  border-radius: 999px;
+  background: #f97316;
+  opacity: 1;
+}
+
+.featured-tours-pagination .swiper-pagination-bullet:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .featured-tours-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+
+  .featured-tours-pagination .swiper-pagination-bullet-active {
+    width: 28px;
+  }
+}
+
+
+
+
+/* Testimonials Pagination */
+.testimonial-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #000080;
+  opacity: 0.35;
+  transition: all 0.3s ease;
+}
+
+.testimonial-pagination .swiper-pagination-bullet-active {
+  width: 36px;
+  border-radius: 999px;
+  background: #f97316;
+  opacity: 1;
+}
